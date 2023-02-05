@@ -20,36 +20,60 @@
 
 // # Problem 2 Solution
 
+// const products = [
+//   ["Gucci Round Bucklet Belt", 400],
+//   ["Gucci Round Bucklet Belt", 450],
+//   ["Esbeda Wallet", 250],
+//   ["Gucci Round Bucklet Belt", 300],
+//   ["Smiley T-Shirt", 500],
+//   ["Smiley T-Shirt", 50],
+//   ["Smiley T-Shirt", 250],
+//   ["Shinie Nail Paint", 100],
+// ];
+
+//  const premiumProducts = products.filter(product => product[1]>300);
+
+//  console.log(premiumProducts)
+
+//  const filteredProducts = products.filter(product=>product[1]<=300);
+
+//  const calculateDiscountedPrice = filteredProducts.map(
+//     product=>[product[0],product[1]-product[1]*0.15]
+//  )
+
+// let productStock = products.reduce((stocks,product)=>{
+//     let stockItem = stocks.find(stock=> stock[0]==product[0]);
+//     if(!stockItem) stocks.push([product[0],1])
+//     else ++stockItem[1];
+//     return stocks;
+// },[])
+
+// console.log(productStock);
+
+//  console.log(filteredProducts)
+//  console.log(calculateDiscountedPrice)
+
+// # Problem 3 Solution
+
 const products = [
   ["Gucci Round Bucklet Belt", 400],
   ["Gucci Round Bucklet Belt", 450],
-  ["Esbeda Wallet", 250],
   ["Gucci Round Bucklet Belt", 300],
   ["Smiley T-Shirt", 500],
   ["Smiley T-Shirt", 50],
-  ["Smiley T-Shirt", 250],
   ["Shinie Nail Paint", 100],
+  ["Shinie Nail Paint", 250],
+  ["Esbeda Wallet", 250],
 ];
 
- const premiumProducts = products.filter(product => product[1]>300);
-
- console.log(premiumProducts)
-
-
- const filteredProducts = products.filter(product=>product[1]<=300);
-
- const calculateDiscountedPrice = filteredProducts.map(
-    product=>[product[0],product[1]-product[1]*0.15]
- )
-
-let productStock = products.reduce((stocks,product)=>{
-    let stockItem = stocks.find(stock=> stock[0]==product[0]);
-    if(!stockItem) stocks.push([product[0],1])
-    else ++stockItem[1];
+const nonPremiumProducts = products
+  .filter(product => product[1] <= 300)
+  .map(prod => [prod[0].toUpperCase(), prod[1]])
+  .reduce((stocks, currentProduct) => {
+    let stockItem = stocks.find((item) => item[0] === currentProduct[0]);
+    if (!stockItem) stocks.push([currentProduct[0], 1]);
+    else stockItem = ++stockItem[1];
     return stocks;
-},[])
+  }, [])
 
-console.log(productStock);
-
- console.log(filteredProducts)
- console.log(calculateDiscountedPrice)
+console.log(nonPremiumProducts);
