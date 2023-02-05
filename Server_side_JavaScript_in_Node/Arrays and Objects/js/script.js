@@ -19,17 +19,17 @@
 
 //Array of Arrays
 
-let cars=[]
+// let cars=[]
 
-let make="Eagle";
-let model="Talon TSI";
-let color="Blue";
+// let make="Eagle";
+// let model="Talon TSI";
+// let color="Blue";
 
-let car=[];
+// let car=[];
 
-car.push(make);
-car.push(model);
-car.push(color);
+// car.push(make);
+// car.push(model);
+// car.push(color);
 
-cars.push(car)
-console.log(cars);
+// cars.push(car)
+// console.log(cars);
