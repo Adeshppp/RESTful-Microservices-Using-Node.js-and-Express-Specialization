@@ -11,3 +11,5 @@
 6. JS function is executed when a function is getting invoked like : Event occures and call function and self invoke
 
 ### Assignment: Banking Application
+
+### Assignment: Cricket Series
