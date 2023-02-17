@@ -22,8 +22,6 @@ const titleCaseConversion = (str) => {
   return str.toLowerCase().replace(/(?:^|\s)\w/g, function(word){
     return word.toUpperCase();
   })
-
-  
 }
 
 // find the largest word (in terms of length) in the specified string and return the value
@@ -36,8 +34,6 @@ const findLongestWord = (str) => {
   console.log(arr[arr.length-1].length)
   return arr[arr.length-1];
 }
-
-
 
 module.exports = {
   countCharacters,

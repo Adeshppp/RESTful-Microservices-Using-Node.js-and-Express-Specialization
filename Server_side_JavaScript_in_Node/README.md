@@ -10,11 +10,11 @@
 5. Code should be executed, by the function inside curly brackets : {}.
 6. JS function is executed when a function is getting invoked like : Event occures and call function and self invoke
 
-### Assignment: Banking Application
+### Assignment 1: Banking Application
 
-### Assignment: Cricket Series
+### Assignment 2: Cricket Series
 
-### Assignment: JavaScript Logic Building
+### Assignment 3: JavaScript Logic Building
 
 
 ## Week 3 Recall
@@ -24,5 +24,14 @@
 3. CommonJS modules basically contain two primary parts:
     a. A variable named exports, which contains the functions, variables that a module wishes to make available to other JavaScript programs.
     b. A require function that JavaScript programs can use to import the exports of the module.
+4. npm helps to install external package avaialble in npm registry.
+5. After installing external npm module following structure will be created:
+    a. node_modules
+    b. package-lock.json
+    c. package.json
+6. It's the package.json file that enables npm to start the project, run scripts, install dependencies, and publish to the npm registry.
+7. package.json is the central place to configure and describe how to interact with and run your application.
 
-### Assignment: String Manipulation
+### Assignment 1: String Manipulation
+
+### Assignment 2: Arrays Manipulation using lodash
