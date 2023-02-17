@@ -15,3 +15,14 @@
 ### Assignment: Cricket Series
 
 ### Assignment: JavaScript Logic Building
+
+
+## Week 3 Recall
+
+1. Module in Node.js is simple or complex functionality organized in single or multiple JavaScript files that can be reused throughout the Node.js application.
+2. The CommonJS module specification is the standard used in Node.js for working with modules.
+3. CommonJS modules basically contain two primary parts:
+    a. A variable named exports, which contains the functions, variables that a module wishes to make available to other JavaScript programs.
+    b. A require function that JavaScript programs can use to import the exports of the module.
+
+### Assignment: String Manipulation
