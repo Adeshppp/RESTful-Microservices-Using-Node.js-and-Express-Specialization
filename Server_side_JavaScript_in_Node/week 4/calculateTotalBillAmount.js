@@ -56,34 +56,71 @@
 
 // ====================================================== Promise Chaining ===================================================================
 
+// const calculateTotalBillAfterDiscount = (billAmount, discountPercentage) => {
+//   return new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       if (discountPercentage <= 0) reject("Invalid discount percentage");
+//       resolve(billAmount - (billAmount * discountPercentage) / 100);
+//     }, 2000);
+//   });
+// };
+
+// const validateBillAmount = (billAmount) => {
+//   return new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       if (billAmount <= 0) reject("Invalide Bill Amount");
+//       resolve(billAmount);
+//     },2000);
+//   });
+// };
+
+// var billAmount = process.argv[2];
+// var discountPercentage = process.argv[3];
+
+// validateBillAmount(billAmount)
+//   .then((amount) => {
+//     return calculateTotalBillAfterDiscount(amount, discountPercentage);
+//   })
+//   .then((result) => {
+//     console.log("Bill amount after discount is ", result);
+//   })
+//   .catch((error) => {
+//     console.log(error);
+//   });
+
+
+// ====================================================== async/await ===================================================================
+
+
 const calculateTotalBillAfterDiscount = (billAmount, discountPercentage) => {
-  return new Promise((resolve, reject) => {
-    setTimeout(() => {
-      if (discountPercentage <= 0) reject("Invalid discount percentage");
-      resolve(billAmount - (billAmount * discountPercentage) / 100);
-    }, 2000);
-  });
-};
+    return new Promise((resolve, reject) => {
+      setTimeout(() => {
+        if (discountPercentage <= 0) reject("Invalid discount percentage");
+        resolve(billAmount - (billAmount * discountPercentage) / 100);
+      }, 2000);
+    });
+  };
+  
+  const validateBillAmount = (billAmount) => {
+    return new Promise((resolve, reject) => {
+      setTimeout(() => {
+        if (billAmount <= 0) reject("Invalide Bill Amount");
+        resolve(billAmount);
+      },2000);
+    });
+  };
 
-const validateBillAmount = (billAmount) => {
-  return new Promise((resolve, reject) => {
-    setTimeout(() => {
-      if (billAmount <= 0) reject("Invalide Bill Amount");
-      resolve(billAmount);
-    },2000);
-  });
-};
-
-var billAmount = process.argv[2];
-var discountPercentage = process.argv[3];
-
-validateBillAmount(billAmount)
-  .then((amount) => {
-    return calculateTotalBillAfterDiscount(amount, discountPercentage);
-  })
-  .then((result) => {
-    console.log("Bill amount after discount is ", result);
-  })
-  .catch((error) => {
-    console.log(error);
-  });
+  const totalBillAmounts = async(billAmount,discountPercentage)=>{
+    const amount= await validateBillAmount(billAmount)
+    const total = await calculateTotalBillAfterDiscount(amount,discountPercentage)
+    return total
+  }
+  
+  var billAmount = process.argv[2];
+  var discountPercentage = process.argv[3];
+  
+totalBillAmounts(billAmount,discountPercentage).then(result=>{
+    console.log("total bill amount : ", result)
+}).catch(error=>{
+    console.log(error)
+})

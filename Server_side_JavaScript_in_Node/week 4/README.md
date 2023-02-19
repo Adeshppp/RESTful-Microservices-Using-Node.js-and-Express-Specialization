@@ -18,7 +18,11 @@ Use Promises to achieve asynchronous programming.
 
 4. Write a program to calculate the total bill after discount. Accept as input the bill amount and discount percentage. Validate the bill before calculating the discount. Use Promise chaining to validate the bill and then calculate the total bill amount.
 
- ## Topics:
- 
- 1. Promises
- 2. Promise chaining
+5. Write a program to calculate the total bill after discount. Accept as input the bill amount and discount percentage. Validate the bill before calculating the discount. Use async/await to validate the bill and then calculate the total bill amount.
+
+
+## Topics:
+
+1. Promises
+2. Promise chaining
+3. async/await
