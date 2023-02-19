@@ -9,6 +9,11 @@
 //         }) 
 // }
 
+
+
+
+
+
 const calculateTotalMarks = (math, english, science, social, language) => {
     return new Promise((resolve, reject) => {
       setTimeout(() => {
@@ -63,3 +68,7 @@ grade(math,english,science,social,language).then(result=>{console.log("grade is 
 // }
 
 
+
+
+
+  
