@@ -12,3 +12,9 @@ By using Error First callbacks:
 
 It is similar as if else statement which returns/executes the block of code once condition satisfies. here we have named it as error.
  we are passing error string during call of function.
+
+
+ ## Topics:
+ 
+ 1. Promises
+ 2. Promise chaining
