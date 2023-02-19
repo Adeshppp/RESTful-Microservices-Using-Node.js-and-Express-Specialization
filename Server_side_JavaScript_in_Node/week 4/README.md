@@ -13,6 +13,10 @@ By using Error First callbacks:
 It is similar as if else statement which returns/executes the block of code once condition satisfies. here we have named it as error.
  we are passing error string during call of function.
 
+3. Write a program to calculate the total bill after discount. Accept as input the bill amount and discount percentage. Validate the bill before calculating the discount.
+Use Promises to achieve asynchronous programming.
+
+4. Write a program to calculate the total bill after discount. Accept as input the bill amount and discount percentage. Validate the bill before calculating the discount. Use Promise chaining to validate the bill and then calculate the total bill amount.
 
  ## Topics:
  
