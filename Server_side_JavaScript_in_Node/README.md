@@ -35,3 +35,11 @@
 ### Assignment 1: String Manipulation
 
 ### Assignment 2: Arrays Manipulation using lodash
+
+## Week 4 Recall
+
+1. The global setTimeout() sets a timer that executes a function or a specifies peice of code once the timer expires.
+2. The setTimeout() takes two parameters- a callback function and the time in milliseconds after which the callback function must execute.
+3. The callback() always takes error as the first parameter.
+
+### Assignment 1: Employees of an organization
