@@ -41,8 +41,16 @@
 1. The global setTimeout() sets a timer that executes a function or a specifies peice of code once the timer expires.
 2. The setTimeout() takes two parameters- a callback function and the time in milliseconds after which the callback function must execute.
 3. The callback() always takes error as the first parameter.
-4. 
+4. Steps to use Promises in asynchronous programming:
+    1. return a Promise object from the function that performs the asynchronous operation.
+    2. Call the function using the then() block with the onFulfilled and onRejected callback functions as parameters as it returns Promise.
+5. Promises allow a programmer to gracefully write chained asynchronous calls called Promise chaining.
+6.  An async function is a special type of function in which it's possible to use the await expression to pause the execution of a given promise until it is resolved.
+7. Promise chaining can be simplified by using async/await.
+
 
 ### Assignment 1: Employees of an organization
 
 ### Assignment 2: Todo List
+
+### Assignment 3: Users
