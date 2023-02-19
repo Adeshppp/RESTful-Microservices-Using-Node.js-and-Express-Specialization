@@ -4,8 +4,9 @@
 //     },2000)
 // }
 
-const calculateTotalBillAfterDiscount = (billAmount, discountPercentage)=>{
-    console.log(billAmount-(billAmount*discountPercentage/100))
+const calculateTotalBillAfterDiscount = (error, billAmount, discountPercentage)=>{
+    if(error) return console.log("Error encountered!!!");
+    console.log(billAmount-(billAmount*discountPercentage/100));
 }
 
 
@@ -20,6 +21,6 @@ var billAmount=process.argv[2]
 var discountPercentage = process.argv[3]
 
 
-setTimeout(calculateTotalBillAfterDiscount,2000,billAmount,discountPercentage);
+setTimeout(calculateTotalBillAfterDiscount,2000,"error", billAmount,discountPercentage);
 // calculateTotalBillAfterDiscount(billAmount,discountPercentage);
 validateBillAmount(billAmount);
