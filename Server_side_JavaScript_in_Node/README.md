@@ -56,3 +56,12 @@
 ### Assignment 3: Users
 
 ### Assignment 3: Grade Evaluation
+
+
+## Week 5 Recall : Working with File system using Node.js
+
+1. Data can be read or written from file in two ways
+    a. Synchronously : This tells Node.js to block all other processess and make the current file read or write only.
+        1. The fs.readFileSync(path, options) method is used to read the specified data synchronously from a file.
+        2. The fs.writeFileSync(path, options) method is used to write the specified data synchronously to a file.
+    b. Asynchronously : Here file is read or written in non blocking way.
