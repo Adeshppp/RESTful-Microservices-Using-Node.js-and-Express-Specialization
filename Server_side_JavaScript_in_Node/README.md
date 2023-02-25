@@ -65,3 +65,5 @@
         1. The fs.readFileSync(path, options) method is used to read the specified data synchronously from a file.
         2. The fs.writeFileSync(path, options) method is used to write the specified data synchronously to a file.
     b. Asynchronously : Here file is read or written in non blocking way.
+
+### Assignment 1: Sales Analyzer
