@@ -68,4 +68,7 @@
 
 2. In the readitional way, when we tell a program to read a file, the file is first read into memory entirely and then we process it. Using streams, we read the data piece by piece, processing its contents without keeping all in memory.
 Streams are memory and time efficient.
+
 ### Assignment 1: Sales Analyzer
+
+### Assignment 2: Insurance Data
