@@ -4,8 +4,6 @@ const fs = require('fs');
 const readline = require('readline');
 const { Writable } = require('stream');
 
-// This method will read the file content line by line and return the array of records
-
 
 // This method will read the file content line by line and return the array of records
 const readFileContents = (fileName, cb) => {

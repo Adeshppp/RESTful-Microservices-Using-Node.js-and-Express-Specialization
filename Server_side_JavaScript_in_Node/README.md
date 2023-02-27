@@ -66,4 +66,6 @@
         2. The fs.writeFileSync(path, options) method is used to write the specified data synchronously to a file.
     b. Asynchronously : Here file is read or written in non blocking way.
 
+2. In the readitional way, when we tell a program to read a file, the file is first read into memory entirely and then we process it. Using streams, we read the data piece by piece, processing its contents without keeping all in memory.
+Streams are memory and time efficient.
 ### Assignment 1: Sales Analyzer
